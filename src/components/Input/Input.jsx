@@ -34,13 +34,13 @@ function Data({ handleData, textInput, setTextInput }) {
       <div className="input">
         <form onSubmit={handleSubmit(onSubmitFunction)}>
           <input
-            placeholder="Search"
+            placeholder="Digite aqui algum diretório"
             {...register("search")}
             type="text"
             value={textInput}
             onChange={(event) => setTextInput(event.target.value)}
           />
-          <button>Search</button>
+          <button>Pesquisar</button>
         </form>
       </div>
     </div>
