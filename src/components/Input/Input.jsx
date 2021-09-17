@@ -24,7 +24,7 @@ function Data({ handleData, textInput, setTextInput }) {
 
   const onSubmitFunction = (data) => {
     handleSearch();
-    setTextInput();
+    setTextInput("");
   };
 
   return (

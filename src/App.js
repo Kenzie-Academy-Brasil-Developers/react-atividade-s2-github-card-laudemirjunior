@@ -8,7 +8,10 @@ function App() {
   const [textInput, setTextInput] = useState("");
   const [data, setData] = useState([]);
   const [show, setShow] = useState(false);
-  const notify = () => toast.error("Diretório não encontrado.");
+  const notify = () =>
+    toast.error("Diretório não encontrado.", {
+      position: "bottom-center",
+    });
 
   function handleData(object) {
     if (object.message !== undefined) {
