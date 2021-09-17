@@ -10,8 +10,8 @@ function Card({ data }) {
               <img src={item.owner.avatar_url} alt={item.id} key={index} />
             </div>
             <div className="data">
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
+              <p>{item.name}</p>
+              <span>{item.description}</span>
             </div>
           </div>
         );
